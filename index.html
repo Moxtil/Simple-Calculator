@@ -8,37 +8,74 @@
   </head>
   <body>
     <div class="home">
-      <div class="container">
+      <form class="container">
         <input class="screen" value="" readonly name="display" />
         <div class="top">
-          <div class="7" onclick="display.value += 7">7</div>
-          <div class="8">8</div>
-          <div class="9">9</div>
-          <div class="del">Del</div>
+          <input class="7" onclick="display.value += 7" value="7" readonly />
+          <input class="8" value="8" onclick="display.value += 8" readonly />
+          <input class="9" value="9" onclick="display.value += 9" readonly />
+          <input
+            class="del"
+            value="DEL"
+            onclick=" display.value = display.value.toString().slice(0,-1)"
+            readonly
+          />
         </div>
         <div class="mid">
-          <div class="4">4</div>
-          <div class="5">5</div>
-          <div class="6">6</div>
-          <div class="plus">+</div>
+          <input class="4" value="4" onclick="display.value += 4" readonly />
+          <input class="5" value="5" onclick="display.value += 5" readonly />
+          <input class="6" value="6" onclick="display.value += 6" readonly />
+          <input
+            class="plus"
+            value="+"
+            onclick="display.value += '+'"
+            readonly
+          />
         </div>
         <div class="midTwo">
-          <div class="1">1</div>
-          <div class="2">2</div>
-          <div class="3">3</div>
-          <div class="minus">-</div>
+          <input class="1" value="1" onclick="display.value += 1" readonly />
+          <input class="2" value="2" onclick="display.value += 2" readonly />
+          <input class="3" value="3" onclick="display.value += 3" readonly />
+          <input
+            class="minus"
+            value="-"
+            onclick="display.value += '-'"
+            readonly
+          />
         </div>
         <div class="bottom">
-          <div class="x">*</div>
-          <div class="slash">/</div>
-          <div class="0">0</div>
-          <div class="dot">.</div>
+          <input
+            class="dot"
+            value="."
+            onclick="display.value += '.'"
+            readonly
+          />
+          <input class="0" value="0" onclick="display.value += 0" readonly />
+          <input
+            class="slash"
+            value="/"
+            onclick="display.value += '/'"
+            readonly
+          />
+          <input class="x" value="*" onclick="display.value += '*'" readonly />
         </div>
         <div class="btns">
-          <button class="equal">=</button>
-          <button class="reset">RESET</button>
+          <input
+            class="equal"
+            type="button"
+            value="="
+            onclick="display.value = eval(display.value)"
+            readonly
+          />
+          <input
+            class="reset"
+            type="button"
+            value="RESET"
+            onclick="display.value = '' "
+            readonly
+          />
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>

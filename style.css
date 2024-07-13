@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Mukta:wght@200;300;400;500;600;700;800&family=Playwrite+AU+TAS:wght@100..400&family=Pridi:wght@200;300;400;500;600;700&display=swap");
+* {
+  font-family: "Mukta", sans-serif;
+}
 .home {
   width: 100%;
   margin-right: auto;
@@ -51,7 +55,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5px;
+  gap: 2px;
 }
 
 .container .screen {
@@ -68,14 +72,14 @@ body {
   cursor: default;
 }
 
-.top div,
-.mid div,
-.midTwo div,
-.bottom div {
+.top input,
+.mid input,
+.midTwo input,
+.bottom input {
   max-width: 85px;
   min-width: 45px;
   height: 35px;
-  font-size: 22px;
+  font-size: 25px;
   padding: 10px;
   background: #9f9f9f;
   margin: 3px;
@@ -83,11 +87,13 @@ body {
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
-.top div:hover,
-.mid div:hover,
-.midTwo div:hover,
-.bottom div:hover {
+.top input:hover,
+.mid input:hover,
+.midTwo input:hover,
+.bottom input:hover {
   background-color: #363636;
   transition: 0.2s;
   color: #fff;
@@ -104,32 +110,32 @@ body {
   background-color: rgb(29, 29, 78);
 }
 
-.btns button {
+.btns input {
   color: white;
   font-weight: bold;
   font-size: 22px;
   cursor: pointer;
   transition: 0.2s;
-}
-.btns button:nth-child(2) {
   width: 49%;
+  border-radius: 5px;
+}
+.btns input:nth-child(2) {
   height: 38px;
   border: none;
   outline: none;
   background: red;
 }
-.btns button:nth-child(2):hover {
+.btns input:nth-child(2):hover {
   background: rgb(152, 9, 9);
 }
-.btns button:nth-child(1) {
-  width: 49%;
+.btns input:nth-child(1) {
   height: 38px;
   border: none;
   outline: none;
-  background: rgb(7, 196, 89);
+  background: rgb(25, 92, 181);
 }
-.btns button:nth-child(1):hover {
-  background: rgb(4, 103, 47);
+.btns input:nth-child(1):hover {
+  background: rgb(20, 67, 130);
 }
 .btns {
   display: flex;
